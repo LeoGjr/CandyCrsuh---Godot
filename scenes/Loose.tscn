@@ -1,0 +1,365 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://scripts/Loose.gd" type="Script" id=1]
+[ext_resource path="res://Shary the fairy/files/png/gui/plashka.png" type="Texture" id=2]
+[ext_resource path="res://Shary the fairy/files/png/gui/circle_green.png" type="Texture" id=3]
+[ext_resource path="res://Shary the fairy/files/png/gui/Group_12.png" type="Texture" id=4]
+[ext_resource path="res://Shary the fairy/files/png/gui/r1.png" type="Texture" id=5]
+[ext_resource path="res://Shary the fairy/files/png/gui/replay.png" type="Texture" id=6]
+[ext_resource path="res://Shary the fairy/files/png/gui/star_level_2.png" type="Texture" id=7]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "Hide"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 88.1733, 449.414 ), Vector2( 88.1733, 1370.49 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:transform/rot")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Replay:transform/pos")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 303.839, 692.561 ), Vector2( 303.839, 1613.64 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Replay:transform/rot")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Home:transform/pos")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 93.8395, 425.561 ), Vector2( 93.8395, 1346.64 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Home:transform/rot")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite4:transform/pos")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 596.652, 593.397 ), Vector2( 596.652, 1514.47 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite4:transform/rot")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite 2:transform/pos")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 219.192, 593.397 ), Vector2( 219.192, 1514.47 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite 2:transform/rot")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite3:transform/pos")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 406.252, 593.397 ), Vector2( 406.252, 1514.47 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Sprite3:transform/rot")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "Show"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 88.1733, -496.391 ), Vector2( 88.1733, 449.414 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:transform/rot")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Replay:transform/pos")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 303.839, -253.244 ), Vector2( 303.839, 692.561 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Replay:transform/rot")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Home:transform/pos")
+tracks/4/interp = 1
+tracks/4/imported = false
+tracks/4/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 93.8395, -520.244 ), Vector2( 93.8395, 425.561 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Home:transform/rot")
+tracks/5/interp = 1
+tracks/5/imported = false
+tracks/5/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Sprite4:transform/pos")
+tracks/6/interp = 1
+tracks/6/imported = false
+tracks/6/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 596.652, -352.408 ), Vector2( 596.652, 593.397 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Sprite4:transform/rot")
+tracks/7/interp = 1
+tracks/7/imported = false
+tracks/7/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite 2:transform/pos")
+tracks/8/interp = 1
+tracks/8/imported = false
+tracks/8/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 219.192, -352.408 ), Vector2( 219.192, 593.397 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite 2:transform/rot")
+tracks/9/interp = 1
+tracks/9/imported = false
+tracks/9/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite3:transform/pos")
+tracks/10/interp = 1
+tracks/10/imported = false
+tracks/10/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 406.252, -352.408 ), Vector2( 406.252, 593.397 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Sprite3:transform/rot")
+tracks/11/interp = 1
+tracks/11/imported = false
+tracks/11/keys = {
+"times": FloatArray( 0, 0.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+
+[node name="Loose" type="Node2D"]
+
+process/pause_mode = 2
+script/script = ExtResource( 1 )
+
+[node name="ColorFrame" type="ColorFrame" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 800.0
+margin/bottom = 1280.0
+color = Color( 1, 1, 1, 0.470588 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 88.1733, -496.391 )
+transform/scale = Vector2( 0.5, 0.23522 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Home" type="TouchScreenButton" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 93.8395, -520.244 )
+transform/scale = Vector2( 0.5, 0.5 )
+z/z = 1
+normal = ExtResource( 3 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Sprite" type="Sprite" parent="Home"]
+
+transform/pos = Vector2( 107.323, 108.793 )
+texture = ExtResource( 4 )
+
+[node name="Replay" type="TouchScreenButton" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 303.839, -253.244 )
+transform/scale = Vector2( 0.5, 0.5 )
+z/z = 1
+normal = ExtResource( 5 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Sprite" type="Sprite" parent="Replay"]
+
+transform/pos = Vector2( 181.323, 88.7936 )
+texture = ExtResource( 6 )
+
+[node name="Anim" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Hide = SubResource( 1 )
+anims/Show = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = "Show"
+
+[node name="Sprite 2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 219.192, -352.408 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 406.252, -352.408 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 596.652, -352.408 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]
+
+[connection signal="pressed" from="Replay" to="." method="_on_Replay_pressed"]
+
+

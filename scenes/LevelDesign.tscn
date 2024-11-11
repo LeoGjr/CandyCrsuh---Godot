@@ -1,0 +1,198 @@
+[gd_scene load_steps=17 format=1]
+
+[ext_resource path="res://scripts/LevelDesign.gd" type="Script" id=1]
+[ext_resource path="res://Shary the fairy/files/png/main_game/Layer_2_Copy.png" type="Texture" id=2]
+[ext_resource path="res://Shary the fairy/files/png/main_game/board.png" type="Texture" id=3]
+[ext_resource path="res://scripts/Board.gd" type="Script" id=4]
+[ext_resource path="res://Shary the fairy/files/png/main_game/moves.png" type="Texture" id=5]
+[ext_resource path="res://Shary the fairy/files/png/gui/Group_3.png" type="Texture" id=6]
+[ext_resource path="res://Shary the fairy/files/png/gui/Group_5.png" type="Texture" id=7]
+[ext_resource path="res://Shary the fairy/files/png/main_game/Group__Copy_97.png" type="Texture" id=8]
+[ext_resource path="res://scripts/Bar.gd" type="Script" id=9]
+[ext_resource path="res://Shary the fairy/files/png/main_game/Group__Copy_96.png" type="Texture" id=10]
+[ext_resource path="res://Shary the fairy/files/png/main_game/Group__Copy_95.png" type="Texture" id=11]
+[ext_resource path="res://Shary the fairy/files/png/gui/star_level_2.png" type="Texture" id=12]
+[ext_resource path="res://Shary the fairy/files/png/main_game/border.png" type="Texture" id=13]
+[ext_resource path="res://scripts/candyManager.gd" type="Script" id=14]
+[ext_resource path="res://Shary the fairy/files/png/main_game/pause_back.png" type="Texture" id=15]
+[ext_resource path="res://Shary the fairy/files/png/main_game/pause.png" type="Texture" id=16]
+
+[node name="Level" type="Node"]
+
+process/pause_mode = 1
+script/script = ExtResource( 1 )
+
+[node name="Back" type="ColorFrame" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 800.0
+margin/bottom = 1280.0
+color = Color( 1, 0.905882, 0.858824, 1 )
+
+[node name="Top" type="Sprite" parent="."]
+
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+centered = false
+region = true
+region_rect = Rect2( 0, 0, 1600, 460 )
+
+[node name="MovesBoard" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 406.958, 95.4271 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+script/script = ExtResource( 4 )
+
+[node name="Label" type="Sprite" parent="MovesBoard"]
+
+transform/pos = Vector2( 8.7597, -91.1006 )
+transform/rot = -2.8086
+texture = ExtResource( 5 )
+
+[node name="Number1" type="Sprite" parent="MovesBoard"]
+
+transform/pos = Vector2( -54.8939, 23.3591 )
+texture = ExtResource( 6 )
+
+[node name="Number2" type="Sprite" parent="MovesBoard"]
+
+transform/pos = Vector2( 57.8139, 23.3591 )
+texture = ExtResource( 7 )
+
+[node name="Bar" type="Sprite" parent="."]
+
+transform/pos = Vector2( 150.596, 128.04 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+script/script = ExtResource( 9 )
+starOn = "res://Shary the fairy/files/png/gui/star_level_1.png"
+
+[node name="Back" type="Sprite" parent="Bar"]
+
+texture = ExtResource( 10 )
+
+[node name="Green" type="Sprite" parent="Bar"]
+
+transform/pos = Vector2( -240.9, -21.4439 )
+transform/scale = Vector2( 1.17914, 1.05323 )
+texture = ExtResource( 11 )
+centered = false
+region = true
+
+[node name="Star3" type="Sprite" parent="Bar"]
+
+transform/pos = Vector2( 240, 75 )
+transform/scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+
+[node name="Star2" type="Sprite" parent="Bar"]
+
+transform/pos = Vector2( 90, 75 )
+transform/scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+
+[node name="ColorFrame" type="ColorFrame" parent="Bar/Star2"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -21.0
+margin/top = -487.0
+margin/right = 19.0
+margin/bottom = -275.0
+color = Color( 0.0234375, 0.0234375, 0.0234375, 1 )
+
+[node name="Star1" type="Sprite" parent="Bar"]
+
+transform/pos = Vector2( -60, 75 )
+transform/scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+
+[node name="ColorFrame" type="ColorFrame" parent="Bar/Star1"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -26.0
+margin/top = -484.0
+margin/right = 14.0
+margin/bottom = -276.0
+color = Color( 0.0234375, 0.0227966, 0.0227966, 1 )
+
+[node name="Border" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 215.847 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 13 )
+centered = false
+
+[node name="Bord" type="ColorFrame" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 62.0
+margin/top = 290.0
+margin/right = 737.0
+margin/bottom = 1190.0
+color = Color( 0.984314, 0.792157, 0.701961, 1 )
+
+[node name="Candies" type="Node" parent="."]
+
+editor/display_folded = true
+script/script = ExtResource( 14 )
+
+[node name="Timer" type="Timer" parent="Candies"]
+
+process_mode = 1
+wait_time = 0.5
+one_shot = true
+autostart = false
+
+[node name="Inter" type="Timer" parent="Candies"]
+
+process_mode = 1
+wait_time = 0.8
+one_shot = false
+autostart = false
+
+[node name="PauseButton" type="TouchScreenButton" parent="."]
+
+transform/pos = Vector2( 715.166, 21.8929 )
+transform/scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 15 )
+pressed = null
+bitmask = null
+shape = null
+shape_centered = true
+shape_visible = true
+passby_press = false
+action = ""
+visibility_mode = 0
+
+[node name="Sprite" type="Sprite" parent="PauseButton"]
+
+transform/pos = Vector2( 73.5295, 75.2335 )
+texture = ExtResource( 16 )
+
+[connection signal="add_points" from="Candies" to="Bar" method="_on_Candies_add_points"]
+
+[connection signal="played" from="Candies" to="MovesBoard" method="_on_Candies_played"]
+
+[connection signal="timeout" from="Candies/Timer" to="Candies" method="_on_Timer_timeout"]
+
+[connection signal="timeout" from="Candies/Inter" to="Candies" method="_on_Inter_timeout"]
+
+[connection signal="pressed" from="PauseButton" to="." method="_on_PauseButton_pressed"]
+
+
